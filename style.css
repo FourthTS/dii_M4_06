@@ -3,3 +3,9 @@ body>.container
     padding: 10px;   
     border-style: none; 
 } 
+.card>img {   
+    margin: 10px;   
+    padding: 10px;   
+    height: 20vh;   
+    object-fit: contain; 
+} 
