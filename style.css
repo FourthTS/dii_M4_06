@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.contentDog > div{
+    
+}
 body > .container {
     padding: 20px;
     margin-left: 80px;
@@ -30,4 +33,12 @@ a>img {
 .miniSize{
     font-size: 10px;
     font-weight: bold;
+}
+p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a{
+    text-decoration: none;
 }

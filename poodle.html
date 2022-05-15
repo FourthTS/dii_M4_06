@@ -29,14 +29,14 @@
         </div>
         <div class="col-9">
           <div class="row">
-            <div class="col-5 p-0">
+            <div class="col-5">
               <input
                 class="form-control form-control-borderless"
                 type="search"
                 placeholder="Search"
               />
             </div>
-            <div class="col-2 p-0">
+            <div class="col-2">
               <button class="btn btn-secondary" type="submit">Search</button>
             </div>
           </div>
@@ -86,40 +86,143 @@
       <div class="row my-2">
         <nav style="--bs-breadcrumb-divider: '/'" aria-label="breadcrumb">
           <ol class="breadcrumb small">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Dogs (101 items)
-            </li>
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Poodle</li>
           </ol>
         </nav>
       </div>
-      <!-- Content box -->
-    
-       
 
-    
-    <div class="row">
-        <footer>
-          <div class="nav justify-content-center border-top pb-3 mb-3">
-            <div style="margin-top: 2rem;">
-              <div class="row" style="width: 500px;">
-                <input class="col-8 p-1" type="text" placeholder="Enter your Email"><button class="col-4 p-1" type="button">Subscribe</button>
+      <!-- Content box -->
+      <div class="contentDog d-flex">
+        <div class="col-6 rounded-3">
+          <div class="dogImg m-4 rounded-3" style="text-align: center">
+            <img
+              class="w-50"
+              src="https://1.bp.blogspot.com/-mRw2t6wpT2s/XexqDzAP0wI/AAAAAAABWc0/scIYtk2AhForC6i4Z1CPaUrEjVUGUmxhgCNcBGAsYHQ/s400/dog_toypoodle_miscolor.png"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+            <div class="row py-3">
+                 <div class="d-flex border-bottom justify-content-between ">
+                    <div>
+                        <h4>Poodle</h4> 
+                    </div>
+                    <div>
+                        <span class="bi bi-star-fill text-warning"></span>
+                        <span class="bi bi-star-fill text-warning"></span>
+                        <span class="bi bi-star-fill text-warning"></span>
+                        <span class="bi bi-star-fill text-warning"></span>
+                        <span class="bi bi-star text-warning"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail w-100 border-bottom ">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-warning" id="nav-aboutDog-tab" data-toggle="tab" href="#nav-aboutDog" role="tab" aria-controls="nav-aboutDog" aria-selected="true">About Dog</a>
+                  <a class="nav-item nav-link text-warning" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Seller Profile</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-aboutDog" role="tabpanel" aria-labelledby="nav-aboutDog-tab">
+                    <div class="container row justify-content-evenly align-items-center">
+                        <div class="pt-3 col-12"><p>Dog Breeds : <span>Poodle</span></p></div>
+                        <div class="col-6"><p>Height : <span>38.1 </span>Cm.</p></div>
+                        <div class="col-6"><p>Weight : <span>20 </span>Kg.</p></div>
+                        <div class="col-6"><p>Gender : <span>Male.</span></p></div>
+                        <div class="col-6"><p>Old : <span>2 </span>month.</p></div>
+                        <div class="col-12"><p>Medical history: <span>Vaccinated and dewormed.</span></p></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="container row justify-content-evenly align-items-center pt-3">
+                        <div class="col-4">
+                            <img class="w-100 rounded" src="https://media.wired.co.uk/photos/607d91994d40fbb952b6ad64/4:3/w_2664,h_1998,c_limit/wired-meme-nft-brian.jpg">
+                        </div>
+                        <div class="col-8 py-3">
+                            <h5>Seller Name :<span> I.O. </span></h5> 
+                            <h6>Contact</h6>
+                                <div class="container">
+                                    <div><a href="#"><i class="bi bi-facebook"></i> Facebook</a></div>
+                                    <div><a href="#"><i class="bi bi-line"></i></i> Line</a></div>
+                                    <div><a href="#"><i class="bi bi-telephone"></i> 000-000-0000</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
-              <div class="row p-1 ju">
-                <div class="col-3">Follow us on</div>
-                <div class="col miniSize p-1"><i class="bi bi-facebook "> </i>Facebook</div>
-                <div class="col miniSize p-1"><i class="bi bi-pinterest"></i> Pinterest</div>
-                <div class="col miniSize p-1"><i class="bi bi-twitter"></i> Twitter</div>
-                <div class="col miniSize p-1"><i class="bi bi-google"></i> Google Plus</div>
-              </div >
+            </div>
+            
+            
+            <div class="d-flex  justify-content-between pt-3">
+                <div class="price">
+                    <h5 class="py-3">Price : <span class="text-danger"> 15,000.00</span> THB</h5> 
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-outline-warning mx-2">Buy Now</button>
+                    <button type="button" class="btn btn-dark"><i class="bi bi-cart-plus-fill"></i></button>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer box-->
+    <div class="row">
+      <footer>
+        <div class="nav justify-content-center border-top pb-3 mb-3">
+          <div style="margin-top: 2rem">
+            <div class="row" style="width: 500px">
+              <input
+                class="col-8 p-1"
+                type="text"
+                placeholder="Enter your Email"
+              /><button class="col-4 p-1" type="button">Subscribe</button>
+            </div>
+            <div class="row p-1 ju">
+              <div class="col-3">Follow us on</div>
+              <div class="col miniSize p-1">
+                <i class="bi bi-facebook"> </i>Facebook
+              </div>
+              <div class="col miniSize p-1">
+                <i class="bi bi-pinterest"></i> Pinterest
+              </div>
+              <div class="col miniSize p-1">
+                <i class="bi bi-twitter"></i> Twitter
+              </div>
+              <div class="col miniSize p-1">
+                <i class="bi bi-google"></i> Google Plus
+              </div>
             </div>
           </div>
-          <p class="text-center text-muted">© 2021 Company, Inc</p>
-        </footer>
-      </div>
+        </div>
+        <p class="text-center text-muted">© 2021 Company, Inc</p>
+      </footer>
+    </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
   </body>
