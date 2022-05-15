@@ -14,6 +14,7 @@
     <title>An example webpage</title>
   </head>
   <body>
+
     <div class="container">
       <div class="row align-items-center">
         <div class="col-3">
@@ -30,10 +31,9 @@
           </div>
         </div>
       </div>
-
+    </div>
     <div class="row my-2">
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-top border-bottom">
-        <div class="container-fluid">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -61,17 +61,18 @@
     </nav>
     </div>
 
-    <div class="row my-4">
+<div class="container">
+    <div class="row my-2">
         <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-            <ol class="breadcrumb samll">
+            <ol class="breadcrumb small">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Library</li>
+              <li class="breadcrumb-item active" aria-current="page">Dogs (101 items)</li>
             </ol>
           </nav>
     </div>
-    
+    <!-- Menu box -->
     <div class="row">             
-        <div class="col"><h5>Dogs</h2></div>         
+        <div class="col"><h5>Dogs</h5></div>         
     </div>         
     <div class="row">             
         <div class="col-3">
@@ -90,27 +91,14 @@
               </ul>
         </div>             
         </div>
-        <div class="col-9">
-            <div class="card-group ">
-                <div class="card">
-                  <img src="https://3.bp.blogspot.com/-WjyQjOk_DN0/XKWREY4UbrI/AAAAAAABSNs/OIuk3y34aLgcYxQrCztbAt8Qo0vqrWkWQCLcBGAs/s400/dog_shibainu_brown.png" 
-                  class="card-img-top" alt="dog">
-                  <div class="card-body pb-3">     
-                      <h5>Dog name</h5>       
-                      <p class="small text-muted mb-0">Seller</p>       
-                      <span class="bi bi-star-fill text-warning"></span>       
-                      <span class="bi bi-star-fill text-warning"></span>       
-                      <span class="bi bi-star-fill text-warning"></span>       
-                      <span class="bi bi-star-fill text-warning"></span>       
-                      <span class="bi bi-star text-warning"></span>       
-                      <p class="small text-muted mb-0">THB xxx.xx</p> 
-                    </div>
-                </div>
 
-                <div class="card">
-                    <img src="https://3.bp.blogspot.com/-WjyQjOk_DN0/XKWREY4UbrI/AAAAAAABSNs/OIuk3y34aLgcYxQrCztbAt8Qo0vqrWkWQCLcBGAs/s400/dog_shibainu_brown.png" 
+<!-- Card item group box -->
+        <div class="col-9">
+            <div class="card-group">
+                  <div class="card col-4">
+                    <img src="https://1.bp.blogspot.com/-mRw2t6wpT2s/XexqDzAP0wI/AAAAAAABWc0/scIYtk2AhForC6i4Z1CPaUrEjVUGUmxhgCNcBGAsYHQ/s400/dog_toypoodle_miscolor.png" 
                     class="card-img-top" alt="dog">
-                    <div class="card-body pb-3">     
+                    <div class="card-body pb-0 m-2">     
                         <h5>Dog name</h5>       
                         <p class="small text-muted mb-0">Seller</p>       
                         <span class="bi bi-star-fill text-warning"></span>       
@@ -121,11 +109,84 @@
                         <p class="small text-muted mb-0">THB xxx.xx</p> 
                       </div>
                   </div>
-
-                  <div class="card">
-                  <img src="https://3.bp.blogspot.com/-WjyQjOk_DN0/XKWREY4UbrI/AAAAAAABSNs/OIuk3y34aLgcYxQrCztbAt8Qo0vqrWkWQCLcBGAs/s400/dog_shibainu_brown.png" 
+                  <div class="card col-4">
+                      <img src="https://3.bp.blogspot.com/-RbgPI-XEzmQ/XKWREGPyzwI/AAAAAAABSNo/mUzXhLEarmkxAy-E2Y2jQuD7MhqzCc2pwCLcBGAs/s400/dog_shibainu_black.png" 
+                      class="card-img-top" alt="dog">
+                      <div class="card-body pb-0 m-2">     
+                          <h5>Dog name</h5>       
+                          <p class="small text-muted mb-0">Seller</p>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star text-warning"></span>       
+                          <p class="small text-muted mb-0">THB xxx.xx</p> 
+                        </div>
+                    </div>
+                    <div class="card col-4">
+                    <img src="https://3.bp.blogspot.com/-WjyQjOk_DN0/XKWREY4UbrI/AAAAAAABSNs/OIuk3y34aLgcYxQrCztbAt8Qo0vqrWkWQCLcBGAs/s400/dog_shibainu_brown.png" 
+                    class="card-img-top" alt="dog">
+                    <div class="card-body pb-0 m-2">     
+                        <h5 class="card-title">Dog name</h5>       
+                        <p class="small text-muted mb-0">Seller</p>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star text-warning"></span>       
+                        <p class="small text-muted mb-0">THB xxx.xx</p> 
+                      </div>
+                  </div>
+                </div>
+                <div class="card-group">
+                  <div class="card col-4">
+                    <img src="https://1.bp.blogspot.com/-LZSF-D7T33w/X9lJQUI4RxI/AAAAAAABc20/n73pxgbmgwQBv8HICX8VCth0botErv_0QCNcBGAsYHQ/s400/dog_corgi_tricolor.png" 
+                    class="card-img-top" alt="dog">
+                    <div class="card-body pb-0 m-2">     
+                        <h5>Dog name</h5>       
+                        <p class="small text-muted mb-0">Seller</p>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star text-warning"></span>       
+                        <p class="small text-muted mb-0">THB xxx.xx</p> 
+                      </div>
+                  </div>
+                  <div class="card col-4">
+                      <img src="https://1.bp.blogspot.com/-geq-qA5m18Y/X5OcdsQZhSI/AAAAAAABb-8/vA86DIKitZE4_oCpKnFa_sfSXzLU1AfNwCNcBGAsYHQ/s400/pet_robot_dog.png" 
+                      class="card-img-top" alt="dog">
+                      <div class="card-body pb-0 m-2">     
+                          <h5>Dog name</h5>       
+                          <p class="small text-muted mb-0">Seller</p>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star-fill text-warning"></span>       
+                          <span class="bi bi-star text-warning"></span>       
+                          <p class="small text-muted mb-0">THB xxx.xx</p> 
+                        </div>
+                    </div>
+                    <div class="card col-4">
+                    <img src="https://1.bp.blogspot.com/-tjaIZz4z-gg/X5OcRPbzntI/AAAAAAABb7g/XPtjTsC5mj4ZfgYgRCSG1Y4aeP9XGyRxACNcBGAsYHQ/s400/dog_shetland_sheepdog_blue_merle.png" 
+                    class="card-img-top" alt="dog">
+                    <div class="card-body pb-0 m-2">     
+                        <h5 class="card-title">Dog name</h5>       
+                        <p class="small text-muted mb-0">Seller</p>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star text-warning"></span>       
+                        <p class="small text-muted mb-0">THB xxx.xx</p> 
+                      </div>
+                  </div>
+                </div>
+              <div class="card-group">
+                <div class="card col-4">
+                  <img src="https://1.bp.blogspot.com/-k2Fv1qBMod0/XwkxbNu09lI/AAAAAAABaAI/o3LbX9iveygEAD3LRUsUMX9QAGvgBi_lQCNcBGAsYHQ/s400/dog_kaiken.png" 
                   class="card-img-top" alt="dog">
-                  <div class="card-body pb-3">     
+                  <div class="card-body pb-0 m-2">     
                       <h5>Dog name</h5>       
                       <p class="small text-muted mb-0">Seller</p>       
                       <span class="bi bi-star-fill text-warning"></span>       
@@ -136,8 +197,40 @@
                       <p class="small text-muted mb-0">THB xxx.xx</p> 
                     </div>
                 </div>
+                <div class="card col-4">
+                    <img src="https://1.bp.blogspot.com/-CpjK6doN9lU/XYhOYM-oK4I/AAAAAAABVHg/68vPZMzgvxUBAYflTAazrX08pgp460KbwCNcBGAsYHQ/s400/pet_darui_dog.png" 
+                    class="card-img-top" alt="dog">
+                    <div class="card-body pb-0 m-2">     
+                        <h5>Dog name</h5>       
+                        <p class="small text-muted mb-0">Seller</p>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star-fill text-warning"></span>       
+                        <span class="bi bi-star text-warning"></span>       
+                        <p class="small text-muted mb-0">THB xxx.xx</p> 
+                      </div>
+                  </div>
+                  <div class="card col-4">
+                  <img src="https://1.bp.blogspot.com/--6-JiW_88ts/X1CK45ov1mI/AAAAAAABavs/SdToo6Tz2SQ43pPQHpbzg4kwsdwSv7GhQCNcBGAsYHQ/s400/dog_great_pyrenees.png" 
+                  class="card-img-top" alt="dog">
+                  <div class="card-body pb-0 m-2">     
+                      <h5 class="card-title">Dog name</h5>       
+                      <p class="small text-muted mb-0">Seller</p>       
+                      <span class="bi bi-star-fill text-warning"></span>       
+                      <span class="bi bi-star-fill text-warning"></span>       
+                      <span class="bi bi-star-fill text-warning"></span>       
+                      <span class="bi bi-star-fill text-warning"></span>       
+                      <span class="bi bi-star text-warning"></span>       
+                      <p class="small text-muted mb-0">THB xxx.xx</p> 
+                    </div>
+                </div>
               </div>
-        </div>         
+            </div>
+          </div>
+    <div class="row">
+        
+    </div>                
     </div> 
 </div>
     <script
