@@ -8,12 +8,18 @@ body > .container {
     border-style: none;
    }
 
-.card>img {   
+a>img {   
     margin: 0.8rem;
     padding: 0.8rem;
     height: 30vh;
     object-fit: contain;
 } 
+.card>img{
+    margin: 0.8rem;
+    padding: 0.8rem;
+    height: 30vh;
+    object-fit: contain;
+}
 .card>.card-body{
     padding-bottom: 20px;
 }
