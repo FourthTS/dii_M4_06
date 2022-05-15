@@ -17,3 +17,7 @@ body > .container {
 .card>.card-body{
     padding-bottom: 20px;
 }
+.pagination a{
+    font-size: 1rem;
+    color: black;
+}
