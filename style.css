@@ -1,17 +1,17 @@
 body{
+    /*width: 390px;
+    height: 844px; 
+    border: 1px solid black;*/
     margin: 0;
     padding: 0;
 }
 
 body > .container {
-    padding: 20px;
-    margin-left: 80px;
     border-style: none;
 }
 
+
 a>img {   
-    margin: 0.8rem;
-    padding: 0.8rem;
     height: 30vh;
     object-fit: contain;
 } 
@@ -25,7 +25,7 @@ a>img {
     padding-bottom: 20px;
 }
 .pagination a{
-    font-size: 1rem;
+    font-size: 0.75rem;
     color: black;
 }
 .miniSize{
@@ -33,9 +33,19 @@ a>img {
     font-weight: bold;
 }
 p{
+    font-size: 0.75rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.h6{
+    font-size: 0.75rem;
+}
+.h8{
+    font-size: 0.7rem;
+}
+h5{
+    font-size: 0.75rem;
 }
 a{
     color: black;
