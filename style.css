@@ -25,3 +25,15 @@ body > .container {
     font-size: 10px;
     font-weight: bold;
 }
+@media screen and (max-width:1024) {
+    .logo{
+        width: 20rem;
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width:) {
+    .logo{
+        width: 10rem;
+        margin-right: 2rem;
+    }
+}
