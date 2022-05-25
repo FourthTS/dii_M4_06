@@ -10,37 +10,11 @@ steps:
   - name: check out the code to build server         
     uses: actions/checkout@v2       
   - name: copy file to server         
-    uses: appleboy/scp-action@master         
-      with:           
-        host: ec2-44-204-230-1.compute-1.amazonaws.com         
-        username: webadmin      
-        port: 22         
-        key: -----BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEAo7iqZtzVHMd/365cr1lkYLKBKYuK3JZYiYGmOsXJUIydwYHn
-BH3G6hyYyhb5+psgjJU2svh7fJHDd/3uLtJzebU8PamcCL2Rhue0NrmFnDAiGtdc
-P/kznEnB7+H5AXd1YhJMaOSsdM9XtX/KPzPw021bsQOIhR5uW1MfoeG/o6aMSiY3
-BqAgqJAXUNVabaeLEUcD7q1lQ7nnY6IgqO5elaP7wMf+xBdOJO1QrsJw7EAX63Yn
-FLw+DFc8krFu6DUs9BILCR6o9h277hesnogLgQw/w0xqTFONKPSkZLuVn9TaocSt
-LiQYFoaO/cimK6Olt2yO4wl1w4zG9wDPDFzx7QIDAQABAoIBABrZojiUZu79WN9a
-PSEUy/1/yOcDV5atoX+Ln7Nr1IQ9S3H81+JIrmKepgAenIiZAFGN9xaK4dWgIip/
-npxXL1D6hBKoyko0rLUvMsL20g63ZiB4yUxElk4/Wmr46FlxOfMHhTh+qDnP91Zw
-yr5qykgiWzNAnRcX0olvrHRkDYXM+2YG4IKWxsHDRO2Xjvqv7Vundxgitt568A0j
-atNcYRDrN/KKQCwrGeCcn0AJcwNZHdfDOaJLnB+o71StGT+VFu4XDWi7L6Nar/gU
-m/GkgSswAi3zM3S5lQc/LYiLXZFRIFAXJsEY2JyxZYgBqpJYvYTgKyOEAGjh8qZz
-UuQ8iwECgYEA1d0X0sJCjUvQD2DWOyyw9jM588XRe37FgS3fvI8NNiXT2+SZ9x0Y
-2qgim6UIqu2wjyv3FCDyw+20RuJ5ayjtt8SeP/+8mJbIJ6erztD8gqiF5YRvWrzl
-krZw1Vp76kMQHiZ6Hh4qG+0WMCXTyaCR+i23Gzx7qZ8KD9vyrBnRM/0CgYEAw/p7
-tIw4AXxVKk+LWeOGok+Y9FlnzGWK92eyATx7lhDRiG20ljgc49JiGaGTNdOW14Sv
-6oUlEpMhgcwfrI5AupBkwHdo6jPVjDTIL5bY7MuKIYLbHy/Yc85aiWbVSzcSQAZ/
-p1nrFOV2CK7RQ1fUCAKSGtz5vn9YbMhn8o8YALECgYEApiN7vl7rFJkwqMGxq4as
-cpaZDqc+dZGmHRRmGzWGLep1Cv4sHaydAkBbok4yzZaY8qBU8W4nKc4fnnGRoY3K
-HljAFze0a1W3aBb5gVEY2OfSHNslJnhYYAEa5qPEX9h5TPLXK06Dp+4mroC0Zo42
-2QNqm94As2S5jFhxzQDBZIECgYBHTgrWbTIvcDJ4e4qjQQKKadWoCiOXHdcLH2KH
-yp7YwfPK5MeQ5Ie2aKSi2MP8EKlQbwmmlZ0gfgHx/PgFS5jHiKPv10KH/CYVplqz
-3fm9Zm0yti7N0RW7RPhyB8VRYY81Vmf51uCOsNJaZGjlTL5rz6ujNIV1x1W/9sbD
-XUcJcQKBgDlDpvE2N/1odw9zbWJnpNQKqysw9R5ImHO5FLAORr3DDM7sinQ5tL/C
-odVVY1DS/jgWUXtJ6WshLurlwI7twkCipBbq46XHhL5A03jD6uDO43nB6XpJWs31
-FUgmrY8U8mn7MiQGIIrq2+N5xUo5dHP6KO95OWvmJz7CORejnOKX
------END RSA PRIVATE KEY----- 
-        source: "./*"           
-        target: "/var/www/html/" 
+  uses: appleboy/scp-action@master         
+    with:           
+    host: ${{ secrets.HOST }}           
+    username: ${{ secrets.SSH_USER_NAME }}          
+    port: ${{ secrets.SSH_PORT }}           
+    key: ${{ secrets.SSH_KEY }}           
+    source: "./*"           
+    target: "/var/www/html/" 
